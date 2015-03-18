@@ -19,8 +19,33 @@
         }
     </script>
 
+    <style>
+        html {
+          position: relative;
+          min-height: 100%;
+        }
+        body {
+          /* Margin bottom by footer height */
+          margin-bottom: 60px;
+        }
+        .footer {
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          /* Set the fixed height of the footer here */
+          height: 60px;
+          background-color: #f5f5f5;
+        }
+    </style>
+
+
 </head>
-<body class="container">
+<body>
+  <div class="container">
+    <nav class="navbar">
+        <a href="http://servicedogsupport.org/"><img src="fsds-logo-wide.png"></a>
+    </nav>
+
     <div class="row">
         <div class="col-md-1"></div>
         <div class="col-md-10">
@@ -69,11 +94,17 @@
                 <li>Multiply the weight in kg by 30, and then add 70</li>
             </ol>
 
-
-
-
         </div>
         <div class="col-md-1"></div>
     </div>
+  </div>
+
+<footer class="footer text-muted">
+    <div class="container center-block">
+        &copy; The Foundation for Service Dog Support, Inc. <br>
+    </div>
+
+
+</footer>
 </body>
 </html>
