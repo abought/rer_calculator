@@ -15,7 +15,13 @@
             var massUnit = parseFloat($("#mass-unit").val());
             var rer = mass * massUnit * 30 + 70;
 
-            $("#rer-result").val(rer);
+            var displayBox = $("#rer-result");
+            if (isNaN(rer)) {
+                // Avoid displaying NaNs in result box
+                displayBox.val("");
+            } else {
+                displayBox.val(rer.toFixed(2));
+            }
         }
     </script>
 
